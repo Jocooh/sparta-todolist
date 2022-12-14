@@ -7,7 +7,7 @@ function Input({ setTodos }) {
 
     //세팅된 title과 contents를 todos에 넣어주는 작업!
     //새로운 투두를 newtodo
-    const newTodo = [{ title, contents, isDone: "false", id: uuidv4() }];
+    const newTodo = { title, contents, isDone: "false", id: uuidv4() };
     setTodos((prev) => {
       return [...prev, newTodo];
     });
